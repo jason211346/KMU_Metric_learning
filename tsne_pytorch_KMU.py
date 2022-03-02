@@ -58,9 +58,11 @@ from dataset.dataset_kmu_cnn import Dataset
 from net.bninception import bninception
 
 parser = argparse.ArgumentParser(description='PyTorch Training')
-parser.add_argument('--data', default='/root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/SoftTriple/', type=str, help='path to dataset')
+parser.add_argument('--data', default='/root/notebooks/nfs/work/jason.chen/project/siamese-pytorch/dataset/KMU_dataset_512/', type=str, help='path to dataset')
+parser.add_argument('--owndata', default='/root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/SoftTriple/', type=str, help='path to dataset')
 parser.add_argument('--cub', default='CUB_10', type=str, help='path to dataset')
 parser.add_argument('--own', default='v8', type=str, help='path to dataset')
+parser.add_argument('--kmu', default='BF_a_black1', type=str, help='path to dataset')
 
 parser.add_argument('--model_file', default='/root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/SoftTriple/out_model/', type=str, help='MN')
 parser.add_argument('--model_path', default='own_v8/own_v8.pth', type=str,help='Mp')
@@ -227,8 +229,11 @@ if __name__ == '__main__':
     device = 'cuda:3'
     
     args = parser.parse_args()
-    traindir = os.path.join(args.data +args.own , 'train')
-    testdir = os.path.join(args.data +args.own , 'val')
+#     traindir = os.path.join(args.owndata +args.own , 'train')
+#     testdir = os.path.join(args.owndata +args.own , 'val')
+    traindir = os.path.join(args.data +args.kmu , 'train')
+    testdir = os.path.join(args.data +args.kmu , 'val')
+    
     filepath = args.model_file + args.model_path
     
     torch.manual_seed(0)
