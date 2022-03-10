@@ -1,0 +1,108 @@
+python train_acc.py --gpu 3 --dim 512 -C 98 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/SoftTriple/car
+
+python train_acc.py --gpu 0 --dim 512 -C 100 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/SoftTriple/CUB_200
+
+python train_acc_CUB.py --gpu 1 --dim 512 -C 100 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_100
+
+python train_acc_CUB.py --gpu 0 --dim 512 -C 200 -b 256 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_images 
+
+---------------------------------------------
+
+python train_acc_CUB.py --gpu 2 --dim 512 -C 10 -b 128 --model_name CUB_10 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_10
+
+python train_acc_CUB.py --gpu 1 --dim 512 -C 100 -b 128 --model_name CUB_100 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_100
+
+python train_acc_CUB.py --gpu 0 --dim 512 -C 200 -b 128 --model_name CUB_200 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_200_82
+
+python train_acc_CUB_plot.py --gpu 2 --dim 512 -C 2 -b 32 --epochs 5 --model_name CUB_2 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_2
+------------------------------------------.
+
+python train_acc_CUB_plot.py --gpu 3 --dim 512 -C 2 -b 32 --epochs 50 --model_name CUB_2 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_2
+
+python train_acc_CUB_plot.py --gpu 0 --dim 512 -C 200 -b 128 --epochs 100 --model_name CUB_200 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_200_82
+
+python train_acc_CUB_plot.py --gpu 1 --dim 512 -C 100 -b 128 --epochs 100 --model_name CUB_100 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_100
+
+python train_acc_CUB_plot.py --gpu 2 --dim 512 -C 10 -b 128 --epochs 100 --model_name CUB_10 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_10
+
+
+
+-------------------------------------------------
+python train_acc_KMU_plot.py --gpu 0 --dim 512 -C 2 -b 60 --epochs 100 --model_name own_v8 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/SoftTriple/v8
+
+python train_acc_KMU_plot.py --gpu 2 --dim 512 -C 2 -b 60 --epochs 100 --model_name own_v9 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/SoftTriple/v9
+
+python train_acc_KMU_plot.py --gpu 0 --dim 512 -C 2 -b 60 --epochs 400 --model_name KMU_v1 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/siamese-pytorch/dataset/KMU_dataset_512/BF_a
+
+python train_acc_KMU_plot.py --gpu 1 --dim 512 -C 2 -b 60 --epochs 400 --model_name KMU_black_v1 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/siamese-pytorch/dataset/KMU_dataset_512/BF_a_black1
+
+python train_acc_KMU_plot.py --gpu 1 --dim 512 -C 2 -b 48 --epochs 100 --model_name KMU_black_v2 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/siamese-pytorch/dataset/KMU_dataset_512/BF_a_black2
+
+python train_acc_KMU_plot.py --gpu 0 --dim 512 -C 2 -b 48 --epochs 100 --model_name KMU_black_v3 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/siamese-pytorch/dataset/KMU_dataset_512/BF_a_black3
+
+python train_acc_KMU_plot.py --gpu 3 --dim 512 -C 2 -b 48 --epochs 100 --model_name KMU_black_v4 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/siamese-pytorch/dataset/KMU_dataset_512/BF_a_black4
+
+python train_acc_KMU_plot.py --gpu 0 --dim 512 -C 2 -b 48 --epochs 100 --model_name KMU_black_v2_2 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/siamese-pytorch/dataset/KMU_dataset_512/BF_a_black2_v2
+
+python train_acc_KMU_plot.py --gpu 0 --dim 512 -C 2 -b 48 --epochs 100 --model_name KMU_black_v2_3 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/siamese-pytorch/dataset/KMU_dataset_512/BF_a_black2_v3
+
+BF_a_black2
+BF_a_black2_v2
+BF_a_black2_v3
+BF_a_black3
+BF_a_black4
+-------------------------------------------------
+
+python train_acc_CUB_plot.py --gpu 1 --dim 512 -C 100 -b 32 --epochs 100 --model_name CUB_100 --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_100
+
+python train_acc_CUB_plot.py --gpu 1 --dim 512 -C 10 -b 128 --epochs 100 --model_name CUB_10_CE --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_10
+
+python train_CUB_softtriple.py --gpu 2 --dim 512 -C 2 -b 32 --epochs 100 --model_name CUB_2 --freeze_BN /root/notebooks/dataset/CUB_2
+-------------------------------------------
+
+
+python train_acc_CUB_plot_CrossEntropy.py --gpu 1 --dim 100 -C 100 -b 32 --epochs 400 --model_name CUB_100_CE --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_100
+
+python train_acc_CUB_plot_CrossEntropy.py --gpu 0 --dim 2 -C 2 -b 32 --epochs 50 --model_name CUB_2_CE --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_2
+
+python train_acc_CUB_plot_CrossEntropy.py --gpu 2 --dim 200 -C 200 -b 32 --epochs 400 --model_name CUB_200_CE --freeze_BN /root/notebooks/nfs/work/jason.chen/project/triplet_loss/pytorch-triplet-loss/CUB_200_82
+
+
+-------------------------------------------
+
+python tsne_pytorch_CE.py --cub CUB_200_82 --model_path CUB_200_CE/epoch400/CUB_200_CE.pth --dim 200
+python tsne_pytorch_CE.py --cub CUB_100 --model_path CUB_100_CE/epoch400/CUB_100_CE.pth --dim 100
+python tsne_pytorch_CE.py --cub CUB_2 --model_path CUB_2_CE/CUB_2_CE.pth --dim 2
+
+-----------------------------------------------
+python tsne_pytorch_KMU.py --kmu BF_a_black2 --model_path KMU_black_v2/KMU_black_v2.pth
+
+ 
+
+python tsne_pytorch_KMU.py --own v9 --model_path own_v9/own_v9.pth
+
+------------------------------------------------------
+
+python tsne_pytorch.py 
+
+python train_CUB_softtriple.py --gpu 2 --dim 64 -C 10 -b 16 --epochs 100 --model_name CUB_10 --freeze_BN /root/notebooks/dataset/CUB_10
+
+
+
+python train_CUB_triplet.py --gpu 0 --dim 64 -C 2 -b 16 --epochs 100 --csv CUB2 --model_name CUB_2_triplet --freeze_BN /root/notebooks/dataset/CUB_2
+
+python train_CUB_triplet.py --gpu 1 --dim 64 -C 10 -b 16 --epochs 100 --csv CUB10 --model_name CUB_10_triplet --freeze_BN /root/notebooks/dataset/CUB_10
+
+python train_CUB_triplet.py --gpu 2 --dim 64 -C 100 -b 128 --epochs 100 --csv CUB100 --model_name CUB_100_triplet --freeze_BN /root/notebooks/dataset/CUB_100
+
+python train_CUB_triplet.py --gpu 3 --dim 64 -C 200 -b 128 --epochs 100 --csv CUB200 --model_name CUB_200_triplet --freeze_BN /root/notebooks/dataset/CUB_200
+
+
+python tsne_pytorch_CUB_triplet.py --cub CUB_10 --model_path CUB_10_triplet/CUB_10_triplet_best.pth --dim 64 --C 10
+
+python tsne_pytorch_CUB_triplet.py --cub CUB_100 --model_path CUB_100_triplet/CUB_100_triplet_best.pth --dim 64 --C 100
+
+
+
+
+python train_KMU_triplet.py --gpu 0 --dim 64 -C 2 -b 16 --epochs 100 --csv v9 --model_name v9_triplet --freeze_BN /root/notebooks/dataset/v9
